@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #D4CAE9;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 90%;
+    padding: 0 20px;
+    animation: iniciar 2.5s ease-in-out ;
+    pointer-events: all;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.marked{
+    border-bottom: 3px solid #F337B2;
+    border-radius: 6%;
+    padding-bottom: 5px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    list-style: none;
+    transition: all .3s ease-in;
+}
+
+
+
+header a{
+    text-decoration: none;
+    color: #fdfbfb;
+    font-size: 20px;
+}
+
+a:hover{
+    font-size: 25px;
+    transition: all.3s ease-in;  
+}
+
+header img{
+    width: 7vw;
+}
+
+.end--header button{
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid #FCEEFF;
+    color: #FCEEFF;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.end--header button:hover{
+    background-color: #F337B2;
+    color: #000000;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+
+.background{
+    background-image: url(../images/fundo\ amorzinho.png);
+    background-size: cover;
+    margin-top: 150px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.MyGoddess img{
+    height: 60vh;
+    width: 100%;
+    margin-top: -120px;
+    display: block;
+}
+
+
+.content--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 35px;
+}
+
+.text{
+    font-size: 20px;
+    width: 40vw;
+    filter: drop-shadow(1px 1px  rgba(0,0,0));
+    color: #FFF ;
+}
+
+.titulo{
+    font-size: 2em;
+    font-family: 'Arsenal SC';
+    width: 40vw;
+    height: 13vh;
+    filter: drop-shadow(3px 2px rgb(0,0,0)); 
+    color: #BAABFF;
+}
+
+
+.background--second{
+    background-image: url(../images/fundo\ amorzinho.png);
+    background-size: cover;
+    margin-top: 30px;
+    width: 90%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+
+
+
+.slide2 img{
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.background--third{
+    background-image: url(../images/fundo\ amorzinho.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: 95%;
+    opacity: 80%;
+}
+
+.slide3 img{
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.slide4{
+    width: 100%;
+}
+
+.slider2{
+    display: flex;
+}
+
+.content--slider2{
+    display: flex;
+}
+
+.content--slider2 img{
+    width: 100%;
+    height: 90%;
+    margin-top: 40px;
+}
+
+.titulo2{
+    font-size: 2em;
+    font-family: 'Arsenal SC';
+    width: 40vw;
+    height: 12vh;
+    filter: drop-shadow(3px 2px rgb(0,0,0)); 
+    color: #BAABFF;
+}
+
+.text2{
+    font-size: 20px;
+    width: 37vw;
+    filter: drop-shadow(1px 1px  rgba(0,0,0));
+    color: #FFF;
+}
+
+.text2 span{
+    color: #F337B2;
+    font-weight:600;
+}
+
+.container {
+    text-align: center;
+    color: rgba(181, 19, 118, 0.777);
+}
+
+h1 {
+    font-size: 3rem;
+    z-index: 1;
+    position: relative;
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(237, 13, 121, 0.7);
+    transform: rotate(45deg);
+    animation: float 5s infinite ease-in-out;
+}
+
+.heart::before, .heart::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(237, 13, 121, 0.7);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
+
+.bouncy-text {
+    display: inline-block;
+    font-size: 3rem;
+    z-index: 1;
+    position: relative;
+}
+
+.bouncy-text span {
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.ursinhos-fofo img{
+    width: 400px;
+    height: 500px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+
+@keyframes iniciar{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+}
+}
+
+
+@media (max-width: 854px){
+
+    .container{
+        max-width: max-content;
+    }
+
+    header a{
+        font-size: 15px;
+    }
+
+    .end--header button{
+        margin-left: 15px;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .titulo{
+        font-size:4vh;
+    }
+
+    .titulo2{
+        font-size: 3.5vh;
+    }
+
+    .text2{
+        margin-top: -30px;
+    }
+}

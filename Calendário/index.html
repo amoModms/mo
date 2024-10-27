@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calendário</title>
+</head>
+
+<body>
+    <header class="container">
+        <div id="left--header">
+            <img src="assets/images/ursinhos.png" alt="Logo">
+            <img src="assets/images/ursinhos fofos2.png" alt="Logo">
+        </div>
+        <div class="mid--header">
+            <ul>
+                <a href="../Inicio/index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="../Calendário/index.html">
+                    <li>Calendário</li>
+                </a>
+                <a href="../MyGoddess/index.html">
+                    <li>MyGoddess</li>
+                </a>
+                <a href="../Vídeos/index.html">
+                    <li>Vídeos</li>
+                </a>
+                <a href="../Cartas/index.html">
+                    <li>Cartas</li>
+                </a>
+            </ul>
+        </div>
+        <div class="end--header">
+            <a href="../Te amo/index.html"><button aonclick="amor()" class="custom-btn btn-8"><span>Te
+                        amo&#128151</span></button></a>
+        </div>
+    </header>
+    <div class="calendar-container">
+        <div class="header">
+            <button onclick="changeMonth(-1)">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button onclick="changeMonth(1)">&gt;</button>
+        </div>
+        <div class="calendar" id="calendar"></div>
+        <button id="markDateButton" class="mark-date-button">Marcar Date</button>
+        <div id="message" style="margin-top: 20px; font-size: 1.2em; color: #F337B2;"></div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

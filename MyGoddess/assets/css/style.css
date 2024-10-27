@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D4CAE9;
+    animation: iniciar 2.5s ease-in-out ;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 90%;
+    padding: 0 20px;
+    pointer-events: all;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.marked{
+    border-bottom: 3px solid #F337B2;
+    border-radius: 6%;
+    padding-bottom: 5px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    list-style: none;
+    transition: all .3s ease-in;
+}
+
+
+
+header a{
+    text-decoration: none;
+    color: #fdfbfb;
+    font-size: 20px;
+}
+
+a:hover{
+    font-size: 25px;
+    transition: all.3s ease-in;  
+}
+
+header img{
+    width: 8vw;
+}
+
+.end--header button{
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid  #F337B2;
+    color: #FCEEFF;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.end--header button:hover{
+    background-color: #FCEEFF;
+    color: #000000;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.text {
+    font-size: 25vh;
+    margin-top: 20vh;
+    display: none;
+}
+
+.botãozinho button {
+    /* display: none; */
+    height: 60vh;
+    width: 60vh;
+    font-size:  45vh;
+    margin-top: 10vh;
+    border-radius: 100%;
+    border-color: #D4CAE9;
+    color: #FCEEFF;
+    background-color: #D4CAE9;
+}
+
+.botãozinho button:hover {
+    background-color: #FCEEFF;
+    color: #D4CAE9;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+
+
+.image-area  img {
+    display: none;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 10%;
+    filter: drop-shadow(15px 5px rgb(243,55,178));
+}
+
+.image-area .image-text {
+    display: none;
+    text-align: center;
+    font-family: 'Arsenal Sc';
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.replay button {
+    height: 60vh;
+    width: 60vh;
+    font-size:  15vh;
+    margin-top: 10vh;
+    border-radius: 100%;
+    border-color: #D4CAE9;
+    color: #FCEEFF;
+    background-color: #D4CAE9;
+}
+
+.replay button:hover {
+    background-color: #FCEEFF;
+    color: #D4CAE9;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.replay-content {
+    display: none;
+}
+
+.replay-content .ursinho-gif img {
+    width: 40vw;
+    height: 70vh;
+    margin-right: 30px;
+    border-radius: 100%;
+}
+
+
+.image-area2  img {
+    display: none;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 10%;
+    filter: drop-shadow(15px 5px rgb(243,55,178));
+}
+
+.image-area2 .image-text {
+    display: none;
+    text-align: center;
+    font-family: 'Arsenal Sc';
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@keyframes iniciar {
+    0% {
+        transform: scale(0.6);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transition: all 0.5s ease-in;
+
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha o header em dispositivos menores */
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header img {
+        width: 15vw; 
+    }
+
+    .end--header button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .botãozinho button {
+        height: 30vh; 
+        width: 30vh;
+        font-size: 20vh;
+    }
+
+    .image-area img, .image-area2 img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .replay button {
+        height: 30vh;
+        width: 30vh;
+        font-size: 10vh;
+    }
+
+    .replay-content .ursinho-gif img {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 20vw;
+    }
+
+    .botãozinho button {
+        height: 25vh;
+        width: 25vh;
+        font-size: 15vh;
+    }
+
+    .end--header button {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+
+    .replay button {
+        height: 25vh;
+        width: 25vh;
+        font-size: 8vh;
+    }
+
+    .image-area img, .image-area2 img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .replay-content .ursinho-gif img {
+        width: 80vw;
+    }
+}
+
+@keyframes iniciar {
+    0% {
+        transform: scale(0.6);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transition: all 0.5s ease-in;
+    }
+}

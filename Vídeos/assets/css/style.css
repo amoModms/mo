@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #D4CAE9;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 90%;
+    padding: 0 20px;
+    animation: iniciar 2.5s ease-in-out ;
+    pointer-events: all;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.marked{
+    border-bottom: 3px solid #F337B2;
+    border-radius: 6%;
+    padding-bottom: 5px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    list-style: none;
+    transition: all .3s ease-in;
+}
+
+
+
+header a{
+    text-decoration: none;
+    color: #fdfbfb;
+    font-size: 20px;
+}
+
+a:hover{
+    font-size: 25px;
+    transition: all.3s ease-in;  
+}
+
+header img{
+    width: 7vw;
+}
+
+.end--header button{
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid #FCEEFF;
+    color: #FCEEFF;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.end--header button:hover{
+    background-color: #F337B2;
+    color: #000000;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+
+.background{
+    background-image: url(../images/fundo\ amorzinho.png);
+    background-size: cover;
+    margin-top: 150px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.MyGoddess img{
+    height: 60vh;
+    width: 100%;
+    margin-top: -120px;
+    display: block;
+}
+
+
+.content--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 35px;
+}
+
+.text{
+    font-size: 20px;
+    width: 40vw;
+    filter: drop-shadow(1px 1px  rgba(0,0,0));
+    color: #FFF ;
+}
+
+.titulo{
+    font-size: 2em;
+    font-family: 'Arsenal SC';
+    width: 40vw;
+    height: 13vh;
+    filter: drop-shadow(3px 2px rgb(0,0,0)); 
+    color: #BAABFF;
+}
+.thumbnail {
+    background-color: #FCEEFF;
+    border: 2px solid #F337B2;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.video-gallery {
+    display: flex;
+    flex-direction:column;
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+.video-player {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+video {
+    width: 100%; 
+    height: auto; 
+}
+
+.close-btn {
+    background-color: #F337B2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #D22F9F;
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.thumbnail {
+    padding: 15px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    header img {
+        width: 12vw; 
+    }
+
+    .content--slider {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text, .titulo {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .MyGoddess img {
+        height: 50vh;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 15vw;
+    }
+
+    .video-gallery {
+        grid-template-columns: 1fr; 
+        max-width: 100%;
+    }
+
+    .content--slider {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+        text-align: center;
+        width: 80%;
+    }
+
+    .text {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .MyGoddess img {
+        height: 40vh;
+    }
+
+    .thumbnail {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    video {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header img {
+        width: 50px; 
+    }
+
+    .end--header button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 20vw;
+    }
+
+    .titulo {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .thumbnail {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    video {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .MyGoddess img {
+        height: 30vh;
+    }
+
+    .end--header button {
+        padding: 10px;
+        font-size: small;
+    }
+}
